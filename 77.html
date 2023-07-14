@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contactez Nous - WTP</title>
+  <style>
+    /* Reset default browser styles */
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Set a base font size and family */
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+    
+    /* Header styles */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+               transition: color 0.3s ease; /* Add smooth color transition on hover */
+
+    }
+        nav a:hover {
+      color: #ffcc00; /* Change color on hover */}
+        /* Search bar styles */
+    .search-bar {
+      display: flex;
+      align-items: center;
+    }
+    
+    /* Contact Us section styles */
+    section#contact {
+      padding: 20px;
+    }
+    
+    section#contact h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    .map-container {
+      position: relative;
+      width: 100%;
+      height: 400px;
+    }
+    
+    .map {
+            position: absolute;
+      top: 55%;
+      left: 10%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      text-align: center;
+
+    }
+        /* Search bar styles */
+    .search-bar {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-bar input[type="text"] {
+      padding: 5px;
+      border: none;
+      border-radius: 3px;
+      margin-right: 5px;
+    }
+
+    .search-bar button {
+      padding: 5px 10px;
+      background-color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    
+    .address1 {
+      width: 100%;
+      height: 100%;
+    }
+    
+        .address2 {
+      width: 20%;
+      height: 10%;
+                  position: absolute;
+      top: -1%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      padding: 10px;
+    }
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+         top: 20%;
+      left: 50%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Navigation menu -->
+    <nav>
+         <ul>
+        <li><a href="file:///C:/Users/hakam/OneDrive/Bureau/Main.html">🏠WTP</a></li>
+        <li  div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Chercher sur RepXpert" />
+    <button onclick="performSearch()">Rechercher</button>
+        </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        <li><a href="file:///C:/Users/hakam/OneDrive/Bureau/Partenaires.html">Nos Partenaires</a></li>
+        <li><a href="file:///C:/Users/hakam/OneDrive/Bureau/About.html">A Propos</a></li>
+        <li><a href="file:///C:/Users/hakam/OneDrive/Bureau/Contact.html">Contactez Nous</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="contact">
+    <h2>Contactez nous</h2>
+    <div class="map-container">
+      <div class="map">
+<iframe src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=residence benzert&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>      </div>
+      <div class="address1">
+        <h3>Département</h3>
+        <p> Rue Benzart et Route Ouled<br> Ziane ,112 Residence Benzert,<br> Casablanca<br><br>Tel: 05 22 30 22 04 </p>
+      </div>
+            <div class="address2">
+        <h3>Vous pouvez egalement nous contacter par Whatsapp</h3>
+
+        <p><a href="https://wa.link/06eaj9">+212 6 64 17 01 98</a></p>
+                <h3>Ou par E-mail</h3>
+                        <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZWxffWWHBHMHtblbjJwghkLhgGNLhggfkCTSNHmVkLqWGMhxWfxLZWSxgpQJJzmthqHhg">worldtpcasa@gmail.com</a></p>
+
+
+      </div>
+    </div>
+  </section>
+  <script >
+      startSlideshow();
+        function performSearch() {
+      var query = document.getElementById("searchInput").value;
+      var searchUrl = "https://www.repxpert.ma/fr/search/results?q=" + encodeURIComponent(query);
+      
+      // Open the search URL in a new tab or window
+      window.open(searchUrl, "_blank");
+    }
+</script>
+  <footer>
+    <p>&copy; 2023 World Truck Parts. Tous droits sont réservés.</p>
+  </footer>
+</body>
+</html>
