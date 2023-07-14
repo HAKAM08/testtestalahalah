@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Truck Parts Company</title>
+  <style>
+    /* Reset default browser styles */
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Set a base font size and family */
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+    
+    /* Header styles */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #slideshow-container {
+      max-width: 100%;
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .slideshow-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 5s ease-in-out;
+    }
+    
+    .active {
+      opacity: 1;
+    }
+ section#home {
+      position: relative;
+      height: 400px;
+      overflow: hidden;
+    }
+
+
+    
+    /* Product catalog styles */
+    section#catalog {
+      padding: 20px;
+    }
+    
+    /* Search bar styles */
+    .search-bar {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-bar input[type="text"] {
+      padding: 5px;
+      border: none;
+      border-radius: 3px;
+      margin-right: 5px;
+    }
+
+    .search-bar button {
+      padding: 5px 10px;
+      background-color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    
+    /* Banner section styles */
+    section:nth-child(2) {
+      background-image: url('banner.jpg');
+      background-size: cover;
+      height: 400px;
+    }
+    
+    /* Product catalog styles */
+    section:nth-child(3) {
+      padding: 20px;
+    }
+    
+    section:nth-child(3) h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    
+    .product-card {
+      background-color: #f7f7f7;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* About Us section styles */
+    section:nth-child(4) {
+      padding: 20px;
+    }
+    
+    section:nth-child(4) h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    /* Contact Us section styles */
+    section:nth-child(5) {
+      padding: 20px;
+    }
+    
+    section:nth-child(5) h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    /* FAQ section styles */
+    section:nth-child(6) {
+      padding: 20px;
+    }
+    
+    section:nth-child(6) h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    /* Customer Reviews section styles */
+    section:nth-child(7) {
+      padding: 20px;
+    }
+    
+    section:nth-child(7) h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    /* Blog section styles */
+    section:nth-child(8) {
+      padding: 20px;
+    }
+    
+    section:nth-child(8) h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+      .reviews {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Navigation menu -->
+
+    <nav>
+      <ul>
+        <li><a href="file:///C:/Users/hakam/OneDrive/Bureau/66.html">🏠WTP</a></li>
+                        <li class="search-bar">
+          <input type="text" name="search-query" placeholder="Search for truck parts">
+          <button type="submit"><a href="https://www.repxpert.ma/fr"> Search</a></button>
+        </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        <li><a href="file:///C:/Users/hakam/OneDrive/Bureau/99.html">Nos Partenaires</a></li>
+        <li><a href="file:///C:/Users/hakam/OneDrive/Bureau/88.html">A Propos</a></li>
+        <li><a href="file:///C:/Users/hakam/OneDrive/Bureau/77.html">Contactez Nous</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <!-- Banner section -->
+  <div id="slideshow-container">
+    <img class="slideshow-image active" src="C:\Users\hakam\Downloads\WhatsApp Image 2023-07-12 at 4.05.52 PM.jpeg">
+    <img class="slideshow-image" src="C:\Users\hakam\Downloads\WhatsApp Image 2023-07-12 at 4.05.46 PM.jpeg" alt="Slideshow Image">
+    <img class="slideshow-image" src="C:\Users\hakam\Downloads\WhatsApp Image 2023-07-12 at 4.10.55 PM.jpeg" alt="Slideshow Image">
+</div>
+  <section id="home">
+    <!-- Banner section -->
+
+    <style>
+h2 {text-align: center;}
+
+</style>
+    <h2>Pourquoi choisir World Truck parts?</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <h3>Prix Compétitifs</h3>
+        <p>Meilleur rapport qualité prix au marché des pièces</p>
+
+      </div>
+      <div class="product-card">
+        <h3>Assistance Continue</h3>
+        <p>Nous sommes toujours a votre service. N'hésitez jamais de nous contacter </p>
+
+      </div>
+            <div class="product-card">
+        <h3>Fiabilité</h3>
+        <p>Tous nos produits sont de qualité et sous garantie</p>
+      </div>
+            <div class="product-card">
+        <h3>Grand Choix</h3>
+        <p>Du à notre partenariat avec les leaders de pieces de rachange</p>
+        <a href="file:///C:/Users/hakam/OneDrive/Bureau/99.html">Voir nos partenaires</a>
+
+  </section>
+  
+    <section id="reviews">
+    <h2>Découvrez</h2>
+    <div class="reviews">
+      <!-- Loop through customer reviews and display them here -->
+
+          <div class="product-grid">
+      <div class="product-card">
+        <h3>Qui nous sommes</h3>
+        <p><a href="file:///C:/Users/hakam/OneDrive/Bureau/88.html">A propos de l'entrprise</a></p>
+
+      </div>
+                  <div class="product-card">
+        <h3><a href="file:///C:/Users/hakam/OneDrive/Bureau/99.html"> Nos partenaires</a></h3>
+        <p>Nos partenires provide us la variance et le grand choix de produits</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Où nous sommes</h3>
+        <p><a href="https://www.google.com/maps?ll=33.584816,-7.59855&z=14&t=m&hl=en&gl=US&mapclient=embed&cid=1025628112054102020"> Ouvrir Google Maps</a> </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  
+  <section id="contact">
+    <h3><a href="file:///C:/Users/hakam/OneDrive/Bureau/77.html"> Contactez nous</a></h3>
+    <p>Tel: 05 22 30 22 04</p>
+    <p>Email: worldtpcasa@gmail.com</p>
+    <p>Adresse: Rue Benzart et Route Ouled Ziane ,112, Casablanca</p>
+  </section>
+  
+
+  <section id="reviews">
+    <h3><a href="file:///C:/Users/hakam/OneDrive/Bureau/88.html"> Avis Clients</a></h3>
+    <div class="reviews">
+  <h4>Karim Salmi. <i>22 avril 2023.</i> ⭐⭐⭐⭐⭐</h4>
+  <p>World Truck Parts offre un service exceptionnel. Leur équipe compétente et serviable m'a aidé à trouver les pièces exactes dont j'avais besoin pour mon camion. Les délais de livraison sont rapides et leurs produits sont toujours conformes à mes attentes. Je suis très satisfait de mon expérience avec cette entreprise </p>
+    </div>
+  </section>
+  
+
+  
+  <footer>
+    <p>&copy; 2023 World Truck Parts. Tous droits sont réservés.</p>
+  </footer>
+    <script>
+    const slideshowImages = document.querySelectorAll('.slideshow-image');
+    let currentImageIndex = 0;
+
+    function startSlideshow() {
+      setInterval(() => {
+        slideshowImages[currentImageIndex].classList.remove('active');
+        currentImageIndex = (currentImageIndex + 1) % slideshowImages.length;
+        slideshowImages[currentImageIndex].classList.add('active');
+      }, 5000);
+    }
+
+    startSlideshow();
+  </script>
+</body>
+</html>
